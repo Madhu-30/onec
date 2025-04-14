@@ -1,0 +1,73 @@
+.layout{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.layout1{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 5% 2%; */
+    margin: 3% 0%;
+    gap: 5%;
+    height: 80vh;
+}
+
+.newsLayout{
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.domainsLayout{
+    /* background-color: seagreen; */
+    flex: 1;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 3% 1%;
+    display: flex;    /* Display cards side by side */
+    gap: 2%;  
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;
+}
+
+.todoMainLayout{
+    margin: 3% 0%;
+}
+.todoLayout{
+    /* background-color: springgreen; */
+    flex: 1;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    display: flex;    /* Display cards side by side */
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;
+}
+.newsLayout{
+    /* background-color: springgreen; */
+    margin: 2% 0%;
+    flex: 1;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    display: flex;    /* Display cards side by side */
+    -ms-overflow-style: none;  /* For Internet Explorer */
+    scrollbar-width: none;
+    gap: 5%;
+}
+
+.postsLayout{
+    height: 100%;
+    max-height: 80vh;
+    background-color: darkslateblue;
+    padding: 2%;
+    overflow-y: scroll;
+}
+.courseslayout{
+    height: 100%;
+    /* background-color: yellow; */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 5%;
+}
+

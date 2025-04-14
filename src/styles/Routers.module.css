@@ -1,0 +1,108 @@
+.actionsLayout{
+    border: 0.1rem solid darkslateblue;
+    margin: 5% 1%;
+}
+.actionsHeading{
+    padding: 2%;
+    color: aliceblue;
+    background-color: darkslateblue;
+    font-size: large;
+}
+.actionsCardLayout{
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 4% 5% ;
+    /* background-color: tan; */
+    justify-content: space-around;
+    gap: 5%;
+}
+.card{
+    border: 0.1rem solid lightblue;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size:small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%; 
+    padding: 2% 1%;
+    color: darkslateblue;
+    font-weight: bold;
+}
+.card img{
+    width: 20%;
+    font-size: smaller;
+    align-self: center;
+    color: darkgrey;
+}
+.quickaccessLayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    gap: 5%;
+    max-height: 80vh;
+    min-height: 70vh;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+
+
+.addtodoContainer{
+    width: 100%;
+    /* background-color: thistle; */
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    justify-content: space-around;
+    gap: 2%;
+    padding: 2%;
+}
+.todoLayout{
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: aquamarine; */
+}
+
+.formLayout{
+    /* background-color: tan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.formLayout div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 15% 0% 0% 0%;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.formLayout button{
+    background-color: aliceblue;
+    border: 0.1rem solid darkslateblue;
+    padding: 2%;
+    margin: 5% 0%;
+    width: 100%;
+}
+
+.formLayout button:hover{
+    cursor: pointer;
+    background-color: darkslateblue;
+    border: 0.1rem solid darkslateblue;
+    color: aliceblue;
+    padding: 2%;
+    margin: 5% 0%;
+    width: 100%;
+}
+
+.AddtodoTodoLayout{
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

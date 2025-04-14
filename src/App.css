@@ -1,0 +1,8 @@
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: tomato; */
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

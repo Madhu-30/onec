@@ -1,0 +1,123 @@
+.navbarContainer{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    background-color: darkslateblue;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 1%;
+}
+.navSec1{
+/* background-color: whitesmoke; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 5%;
+}
+
+.navSec1Home{
+color: aliceblue;
+font-size: x-large;
+text-decoration: none;
+display: inline-block;
+font-weight: 600;
+/* background: linear-gradient(0deg, slategrey, aliceblue); */
+/* -webkit-background-clip: text; */
+/* -webkit-text-fill-color: transparent; */
+/* transition: transform 0.3s ease, text-shadow 0.3s ease; */
+}
+.navSec1Home:hover{
+    height: 100%;
+    cursor: pointer;
+    /* background-color: rgba(181, 181, 181, 0.1); */
+    color: aliceblue;
+    border-radius: 0.2rem;
+    /* transform: scale(1.05);
+    text-shadow: 0 0 10px aliceblue; */
+}
+
+.navSec2{
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    text-decoration: none;
+    /* background-color: whitesmoke; */
+}
+.navSec2 a{
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+    /* background-color: whitesmoke; */
+}
+.navSec2 a:hover{
+    cursor: pointer;
+    color: white;
+    /* font-weight: bolder; */
+    background-color: rgba(106, 106, 110, 0.3);
+    /* padding: 0% 5%; */
+    /* font-size:larger; */
+}
+.navSec3{
+    /* background-color: whitesmoke; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navSec3 i{
+    margin: 2%;
+    font-size: x-large;
+    color: antiquewhite;
+}
+.navSec3 input{
+    padding: 3% 0% 3% 2%;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+}
+
+.nav-container{
+    background-color: whitesmoke;
+}
+
+.fooContainer{
+    /* background-color: honeydew; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1%;
+}
+.fooSec1 p:not(.fooHeading){
+    font-size: smaller;
+    padding: 2%;
+}
+
+.fooSec1 p:not(.fooHeading):hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: darkslateblue;
+}
+.fooHeading{
+    color: black;
+    font-weight: bold;
+}
+.fooIcons{
+    background-color: darkslateblue;
+}
+.fooIcons i{
+    width: 50px;
+    padding: 2%;
+    text-align: center;
+    color: aliceblue;
+}
+.fooIcons i:hover{
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+}
