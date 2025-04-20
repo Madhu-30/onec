@@ -33,13 +33,13 @@ export default function News() {
       {
         data.results.map((news) => {
           return(
-            <div key={news.id}>
-                <div className={styles.newsCard}>
+            // <div key={news.id}>
+                <div key={news.id} className={styles.newsCard}>
               <p onClick={() => {
                 window.open(news.url, "_blank");
               }}>{news.title}</p>
               </div>
-            </div>
+            // </div>
 
           )
         })

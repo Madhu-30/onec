@@ -11,6 +11,7 @@
     color: white;
     font-size: large;
 }
+
 .newsCard p:hover{
     cursor: pointer;
     font-weight: bolder;
@@ -165,4 +166,189 @@
     border: 0.1rem solid darkslateblue;
     background-color: darkslateblue;
     color: aliceblue;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+
+    .newsCard{
+        width: 200px;
+        height: 150px;
+        flex-shrink: 0;
+        background-blend-mode: overlay;
+        background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlfGVufDB8fDB8fHww');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(88, 81, 81, 0.9);
+        padding: 5%;
+        color: white;
+        font-size: medium;
+    }
+    
+    /* .newsCard p:hover{
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: larger;
+    } */
+    
+    .postsCard{
+        background-color: aliceblue;
+        margin: 1%;
+        padding: 2%;
+        font-size: smaller;
+    }
+    
+    .postsHeading{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        text-align: left;
+        font-size: smaller;
+        font-weight: bold;
+        /* margin: 2% 0%; */
+    }
+    .postsHeading i{
+        text-align: center;
+        align-self: center;
+    }
+    .postsCard span{
+        padding: 1% 0%;
+    }
+    .postsIcons i{
+        padding: 1% 3%;
+    } 
+    .postsHeader{
+        padding: 2%;
+        color: aliceblue;
+        font-size: large;
+    }
+    
+    .todoImage{
+        width: 200px;
+        height: 100px;
+        background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    
+    .todoCard{
+        background-color: aliceblue;
+        min-width: 150px;
+        max-width: 200px;
+        flex: 0 0 auto;
+        margin: 2% 3%;
+    }
+
+    .todoContent{
+        padding: 3% 1%;
+        /* background-color: antiquewhite; */
+    }
+    .todoName{
+        font-size: small;
+        color: black;
+    }
+    .todoStatus{
+        font-size: x-small;
+        color: grey;
+        padding: 4% 0%;
+    }
+
+    /* .todoStatus:hover{
+        cursor: pointer;
+        color: green;
+        font-weight: bolder;
+    } */
+    
+    .domainCard{
+        padding: 1.5% 3%;
+        border: 0.1rem solid darkslateblue;
+        font-size: small;
+        /* white-space: nowrap; */
+        background-color: aliceblue;
+        margin: 2%;
+    }
+    
+    /* .domainCard:hover{
+        cursor: pointer;
+        font-size: larger;
+        font-weight: bold;
+    }
+     */
+
+    .courseCard1, .courseCard2, .courseCard3{
+        /* height: 1500px; */
+        padding: 3%;
+        border: 0.1rem solid darkslateblue;
+        margin: 2% 0%;
+        gap: 5%;
+    }
+    .courseCard1Div1,.courseCard1Div2, .courseCard1Div3{
+        /* display: grid;
+        grid-template-columns: 2fr 1fr; */
+        /* background-color: blanchedalmond; */
+        height: max-content;
+        font-size: smaller;
+    }
+    .courseCard1{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .courseCard1 progress{
+        width: 90%;
+    }
+    .courseCard2{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+    }
+    .courseCard2Div1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5%;
+    }
+    .courseCard2Div1 button{
+        padding: 1% 0%;
+    }
+    .courseCard2Content{
+        font-size: smaller;
+    }
+    
+    .courseCard3{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+    .courseCard3Div1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 3%;
+    }
+    .courseCard3 button{
+        border: 0.1rem solid darkslateblue;
+        background-color: aliceblue;
+    }
+    /* .courseCard3 button:hover{
+        cursor: pointer;
+        border: 0.1rem solid darkslateblue;
+        background-color: darkslateblue;
+        color: aliceblue;
+    } */
+    
+    
+    .courseCard2 button{
+        border: 0.1rem solid darkslateblue;
+        background-color: aliceblue;
+    }
+    /* .courseCard2 button:hover{
+        cursor: pointer;
+        border: 0.1rem solid darkslateblue;
+        background-color: darkslateblue;
+        color: aliceblue;
+    } */
 }

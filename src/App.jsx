@@ -7,6 +7,8 @@ import { Routes,Route } from 'react-router-dom'
 import QuickAccess from './components/QuickAccess'
 import News from './components/News'
 import AddToDo from './components/AddToDo'
+
+
 function App() {
 
   return (
@@ -20,6 +22,7 @@ function App() {
     <Route path='/quickaccess' element={<QuickAccess/>}/>
     <Route path='/todos' element={<AddToDo/>}/>
     </Routes>
+    
     <Footer/>
     </>
   )

@@ -121,3 +121,127 @@ font-weight: 600;
     font-size: larger;
     color: white;
 }
+
+
+
+@media only screen and (max-width:800px){
+
+    .navbarContainer{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar{
+        background-color: darkslateblue;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        /* grid-template-columns: 1fr 1fr; */
+        gap: 5%;
+        padding: 3% 1%;
+    }
+
+    .navSec1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 5%;
+        /* background-color: aquamarine; */
+    }
+    
+    .navSec1Home{
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+        font-size: medium;
+        text-decoration: none;
+        font-weight: 600;
+        white-space: nowrap;
+        /* background-color: violet; */
+    }
+    
+    .navSec2{
+        font-size: larger;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: aliceblue;
+        text-decoration: none;
+        display: none;
+        /* background-color: whitesmoke; */
+    }
+
+    .navSec3{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        gap: 5%;
+        /* background-color: firebrick; */
+    }
+
+
+    .navSec3 i{
+        margin: 2%;
+        font-size: x-large;
+        color: antiquewhite;
+        /* background-color: tomato; */
+    }
+    .navSec3 input{
+        padding: 3% 0% 3% 2%;
+        border: 1px solid white;
+        border-radius: 0.8rem;
+        display: none;
+        background-color: slategrey;
+    }
+    
+    
+    .fooContainer{
+        /* background-color: honeydew; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 1%;
+        background-color: darkslateblue;
+        bottom: 0;
+        color: darkgray;
+        justify-items: center;
+    }
+    .fooSec1 p:not(.fooHeading){
+        font-size: xx-small;
+        padding: 4%;
+        white-space: nowrap;
+    }
+    
+    /* .fooSec1 p:not(.fooHeading):hover{
+        cursor: pointer;
+        font-weight: bold;
+        color: darkslateblue;
+    } */
+    .fooHeading{
+        color: antiquewhite;
+        font-weight: bold;
+        font-size: smaller;
+    }
+    .fooIcons{
+        background-color: darkslateblue;
+    }
+    .fooIcons i{
+        width: 50px;
+        padding: 2%;
+        text-align: center;
+        color: aliceblue;
+    }
+    /* .fooIcons i:hover{
+        cursor: pointer;
+        font-size: larger;
+        color: white;
+    } */
+    
+    
+}
