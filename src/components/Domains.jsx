@@ -19,7 +19,9 @@ export default function() {
           { id: 9, title: 'External Credentials', url: 'https://www.credly.com/' }
         ];
   return (
-    <div className={stylesLayout.domainsLayout}>
+    <div>
+                <h3>Learning Resources</h3>
+                <div className={stylesLayout.domainsLayout}>
             {domainsList.map(item => {
                 return(
                     <div key={item.id} className={styles.domainCard}>
@@ -30,5 +32,7 @@ export default function() {
                 );
             })}
     </div>
+    </div>
+
   )
 }

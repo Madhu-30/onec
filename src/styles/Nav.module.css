@@ -4,12 +4,13 @@
     z-index: 100;
 }
 .navbar{
-    background-color: darkslateblue;
+    background-color: navy;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5%;
     padding: 1%;
+    color: navy;
 }
 .navSec1{
 /* background-color: whitesmoke; */
@@ -18,6 +19,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 gap: 5%;
+/* color: navy; */
 }
 
 .navSec1Home{
@@ -59,9 +61,10 @@ font-weight: 600;
 }
 .navSec2 a:hover{
     cursor: pointer;
-    color: white;
-    /* font-weight: bolder; */
-    background-color: rgba(106, 106, 110, 0.3);
+    
+    /* color: white; */
+    font-weight: bolder;
+    /* background-color: rgba(106, 106, 110, 0.3); */
     /* padding: 0% 5%; */
     /* font-size:larger; */
 }
@@ -75,7 +78,7 @@ font-weight: 600;
 .navSec3 i{
     margin: 2%;
     font-size: x-large;
-    color: antiquewhite;
+    color: navy;
 }
 .navSec3 input{
     padding: 3% 0% 3% 2%;
@@ -108,7 +111,7 @@ font-weight: 600;
     font-weight: bold;
 }
 .fooIcons{
-    background-color: darkslateblue;
+    background-color: navy;
 }
 .fooIcons i{
     width: 50px;
@@ -122,7 +125,28 @@ font-weight: 600;
     color: white;
 }
 
+.navList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2% 1%;
+    font-size: large;
+}
+.navList p:hover{
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
 
+.navShape{
+    width: 100%;
+    height: 10rem;
+    background-color: antiquewhite;
+    background: radial-gradient(circle,aliceblue, #7bbafe);
+    border-radius: 5rem;
+
+}
 
 @media only screen and (max-width:800px){
 

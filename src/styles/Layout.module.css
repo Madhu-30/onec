@@ -18,19 +18,32 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .domainsLayout{
     /* background-color: seagreen; */
     flex: 1;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto; 
+    /* Enable horizontal scrolling */
     padding: 3% 1%;
-    display: flex;    /* Display cards side by side */
+    display: flex;    
+    /* Display cards side by side */
     gap: 2%;  
-    -ms-overflow-style: none;  /* For Internet Explorer */
+    -ms-overflow-style: none;  
+    /* For Internet Explorer */
     scrollbar-width: none;
+}
+
+.domainsLayout{
+    /* background-color: salmon; */
+    display: grid;
+    padding: 3% 2% 8% 2%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
 }
 
 .todoMainLayout{
@@ -59,7 +72,7 @@
 .postsLayout{
     height: 100%;
     max-height: 80vh;
-    background-color: darkslateblue;
+    background-color: navy;
     padding: 2%;
     overflow-y: scroll;
 }

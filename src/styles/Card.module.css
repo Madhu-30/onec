@@ -1,5 +1,5 @@
 .newsCard{
-    width: 300px;
+    width: 15em;
     height: 180px;
     background-blend-mode: overlay;
     background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlfGVufDB8fDB8fHww');
@@ -7,15 +7,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(88, 81, 81, 0.9);
-    padding: 5%;
+    padding: 2%;
+    border-radius: 5%;
     color: white;
-    font-size: large;
+    font-size: medium;
+
+    /*****IMPORTANT*******/
+    flex: 0 0 auto;
 }
 
 .newsCard p:hover{
     cursor: pointer;
     font-weight: bolder;
-    font-size: larger;
+    font-size: large;
 }
 
 .postsCard{
@@ -64,9 +68,10 @@
     max-width: 300px;
     flex: 0 0 auto;
     margin: 2% 3%;
+    border-radius: 5%;
 }
 .todoContent{
-    padding: 5% 1%;
+    padding: 5% 2%;
 }
 .todoName{
     font-size: larger;
@@ -83,29 +88,51 @@
 }
 
 .domainCard{
-    padding: 1.5% 3%;
-    border: 0.1rem solid darkslateblue;
-    font-size: large;
+    padding: 3%;
+    border: 0.1rem solid navy;
+    font-size: medium;
     white-space: nowrap;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .domainCard:hover{
     cursor: pointer;
-    font-size: larger;
+    /* font-size: large; */
     font-weight: bold;
-
+    opacity: 0;
+    animation: ani 1s ease forwards;
 }
+@keyframes ani {
+    from {
+      opacity: 0.7;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 .courseCard1, .courseCard2, .courseCard3{
     width: 100%;
     /* align-items:center ;
     justify-content: center; */
     padding: 3%;
-    border: 0.1rem solid darkslateblue;
+    border: 0.1rem solid navy;
     display: flex;
     flex-direction: column;
+    animation: anim 1s ease forwards;
 }
+@keyframes anim {
+    from {
+      opacity: 0.7;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 .courseCard1Div1,.courseCard1Div2, .courseCard1Div3{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -146,25 +173,25 @@
     margin: 3%;
 }
 .courseCard3 button{
-    border: 0.1rem solid darkslateblue;
+    border: 0.1rem solid navy;
     background-color: aliceblue;
 }
 .courseCard3 button:hover{
     cursor: pointer;
-    border: 0.1rem solid darkslateblue;
-    background-color: darkslateblue;
+    border: 0.1rem solid navy;
+    background-color: navy;
     color: aliceblue;
 }
 
 
 .courseCard2 button{
-    border: 0.1rem solid darkslateblue;
+    border: 0.1rem solid navy;
     background-color: aliceblue;
 }
 .courseCard2 button:hover{
     cursor: pointer;
-    border: 0.1rem solid darkslateblue;
-    background-color: darkslateblue;
+    border: 0.1rem solid navy;
+    background-color: navy;
     color: aliceblue;
 }
 

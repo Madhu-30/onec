@@ -3,13 +3,17 @@ import styles from '../styles/Nav.module.css'
 import {NavLink, useNavigate} from "react-router-dom"
 
 export default function Header() {
+const navList = [
+    {id:1,name:'Home'},
+    {id:2,name:'Resources'},
+    {id:3,name:'Employee center'},
+    {id:4,name:'Workspace'},
+    {id:5,name:'Profile'},
 
-    // const navigate = useNavigate();
-
-    // const handleClickTodo = () => {
-    // }
+]
   return (
-    <div className={styles.navbarContainer}>
+    <>
+        <div className={styles.navbarContainer}>
         <nav className={styles.navbar}>
             <div className={styles.navSec1}>
                 <img src="null" alt='logo'/>
@@ -27,6 +31,23 @@ export default function Header() {
                 <i className='fa-solid fa-circle-user'></i>
             </div>
         </nav>
-    </div>
+        </div>
+
+        <div className={styles.navList}>
+            {navList.map(item => {
+                return(
+                    <div key={item.id}>
+                    <p>{item.name || 'No Title'}</p>
+                    {console.log(`hi from here ${item.name}`)}
+                    </div>
+                )
+            })}
+        </div>
+
+        {/* <div className={styles.navShape}>
+            <p></p>
+        </div> */}
+    </>
+
   )
 }

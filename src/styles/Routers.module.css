@@ -1,11 +1,11 @@
 .actionsLayout{
-    border: 0.1rem solid darkslateblue;
+    border: 0.1rem solid navy;
     margin: 5% 1%;
 }
 .actionsHeading{
     padding: 2%;
     color: aliceblue;
-    background-color: darkslateblue;
+    background-color: navy;
     font-size: large;
 }
 .actionsCardLayout{
@@ -85,7 +85,7 @@
 }
 .formLayout button{
     background-color: aliceblue;
-    border: 0.1rem solid darkslateblue;
+    border: 0.1rem solid navy;
     padding: 2%;
     margin: 5% 0%;
     width: 100%;
@@ -93,8 +93,8 @@
 
 .formLayout button:hover{
     cursor: pointer;
-    background-color: darkslateblue;
-    border: 0.1rem solid darkslateblue;
+    background-color: navy;
+    border: 0.1rem solid navy;
     color: aliceblue;
     padding: 2%;
     margin: 5% 0%;
